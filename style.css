@@ -1,0 +1,156 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:white;
+color: black;
+padding: 20px;
+}
+
+.container{
+max-width: 900px; 
+margin: 0 auto;   
+background-color: white;
+padding: 20px;
+border: 1px solid #999;
+border-radius: 5px;
+}
+
+.cabecalho{
+text-align: center;
+padding: 25px;
+border: 1px dashed #777;    
+margin-bottom: 15px;
+}
+
+.cabecalho h1{
+font-size: 26px;
+margin-bottom: 5px;    
+}
+
+.cabecalho p{
+font-size: 14px;    
+color: #666;
+}
+
+.menu{
+text-align: center; 
+padding: 15px;   
+border: 1px dashed #777;
+margin-bottom: 15px;
+}
+
+.menu h2{
+font-size: 18px;
+margin-bottom: 12px;
+}
+
+.links-menu{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.links-menu a{
+text-decoration: none;
+color: #333;
+border: 1px dashed #777;    
+padding: 7px 30px;
+font-size: 14px;
+}
+
+.links-menu a:hover{
+background-color: #777;
+color: white;  
+}
+
+.conteudo{
+display: flex;
+gap: 15px;
+align-items: flex-start;
+margin-bottom: 15px;
+}
+
+.livros{
+width: 45%;    
+border: 1px solid #008c9e;
+padding: 15px;
+}
+
+.livros li{
+color: #333;
+border: 1px solid #777;    
+padding: 7px ;
+margin-bottom: 15px;
+font-size: 14px;
+list-style-type: none;
+}
+
+.livros h2{
+margin-bottom: 15px;
+text-align: center;
+}
+
+.cadastro{
+width: 55%;    
+border: 1px solid #008c9e;
+padding: 15px;
+}
+
+.cadastro h2{
+margin-bottom: 15px;
+}
+
+.cadastro input{
+color: #333;
+border: 1px solid #777;    
+padding: 3px ;
+margin-bottom: 15px;
+width: 425px;
+height: 30px;
+}
+
+.cadastro label{
+color: #333; 
+font-size: 14px;
+list-style-type: none;
+}
+
+.cadastro button{
+background-color: white;
+border: 2px solid #008c9e;    
+padding: 3px ;
+margin-bottom: 15px;
+width: 425px;
+height: 30px;
+color: #008c9e;
+}
+
+.cadastro button:hover{
+background-color: #008c9e;;
+color: white;    
+}
+
+
+.rodape{
+text-align: center;
+padding: 15px;    
+border: 1px dashed #777;
+}
+
+.rodape h2{
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.rodape p{
+font-size: 13px;
+color: #666;    
+}
