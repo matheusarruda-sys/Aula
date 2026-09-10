@@ -1,0 +1,235 @@
+body{
+    background-color: rgba(54, 3, 83, 0.48);
+}
+
+.container-principal{
+display: flex;
+flex-direction: row;
+justify-content: center; 
+align-items: center;
+}
+
+.contact-card{
+    background-color: white;
+    height: 670px;
+    width: 500px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.card-header{
+    background-color:rgba(9, 80, 212, 0.8);
+    padding: 2px;
+    border-radius: 10px 10px 0 0;
+    height: 80px;
+    
+}
+
+.card-content h1{
+    color: hsl(250, 90%, 30%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+
+}
+.titulo{
+    color: hsl(0, 1%, 27%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact-info{
+  background-color: hsl(0, 8%, 93%);
+  height: 200px;
+  width: 450px;
+  border-radius: 10px;
+  margin-left: 20px;
+  box-shadow:-6px 0px 0px 0px rgba(9, 80, 212, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.info-item{
+margin-left: 5px;
+margin-right: 5px;
+padding: 6px;
+border-bottom: 1px solid hsl(0, 0%, 60%);
+display: flex;
+justify-content: space-between; 
+align-items: center;
+margin-top: 10px;
+}
+
+.info-item .label{
+  text-transform: uppercase;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-btn-linkedin{
+     width: 80px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsl(220, 66%, 35%);
+    text-decoration: none;
+    color: white;
+}
+.social-btn-github{
+     width: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsl(0, 3%, 14%);
+    text-decoration: none;
+    color: white;
+}
+.social-btn-portfolio{
+    width: 80px;
+    text-align: center;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsl(220, 52%, 54%);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:hsl(192, 80%, 42%);
+    text-decoration: none;
+    color: white;
+
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 3px solid hsl(0, 0%, 60%);
+    color: hsl(0, 1%, 27%);
+}
+
+.contact-card-2{
+   background-color: white;
+   height: 670px;
+   width: 500px;
+   margin: 15px;
+   border-radius: 10px;
+}
+
+.contact-card-2 .card-header{
+    background-color:rgba(211, 10, 77, 0.8);
+    padding: 2px;
+    border-radius: 10px 10px 0 0;
+    height: 80px;
+}
+.contact-card-2 .contact-info{
+box-shadow:-6px 0px 0px 0px rgba(211, 10, 77, 0.8);
+}
+
+.avatar{
+display: flex;
+justify-content: center; 
+align-items: center;
+    
+}
+
+.avatar img{
+ background-color: #ddd;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover;
+  width: 150px;  
+  border-radius: 50%;    
+  border: 4px solid white;
+  margin-top: -45px; 
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.social-btn-dribbble{
+    width: 80px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsl(325, 82%, 34%);
+    text-decoration: none;
+    color: white;
+}
+.social-btn-behance{
+     width: 80px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsl(219, 89%, 28%);
+    text-decoration: none;
+    color: white;
+}
+.social-btn-instagram{
+     width: 80px;
+    text-align: center;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:hsl(276, 87%, 35%);
+    text-decoration: none;
+    color: white;
+}
+
+.contact-card-2 .card-footer{
+border-top: 3px solid rgba(211, 10, 77, 0.8);
+}
+
+.btn-principal-2{
+    background-color:rgba(211, 10, 77, 0.8);
+}
+
+.info-item2{
+margin-left: 5px;
+margin-right: 5px;
+padding: 6px;
+display: flex;
+justify-content: space-between; 
+align-items: center;
+margin-top: 10px;
+}
+
+.info-item3{
+margin-left: 5px;
+margin-right: 5px;
+padding: 6px;
+display: flex;
+justify-content: space-between; 
+align-items: center;
+margin-top: 10px;
+}
+
+.info-item2 .label{
+  text-transform: uppercase;
+}
+.info-item3 .label{
+  text-transform: uppercase;
+}

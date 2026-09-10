@@ -1,0 +1,172 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Cores e Tipografia</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1>Meu Blog de Tecnologia</h1>
+      <p class="tagline">Compartilhando conhecimento sobre desenvolvimento web</p>
+    </div>
+  </header>
+  
+<div class="content-wrapper">
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container">
+    <div class="container2">
+      <!-- POST 1 -->
+      <article class="post">
+        <h2>Introdução ao CSS Moderno</h2>
+        <div class="post-meta">
+          <span class="author">Por João Silva</span>
+          <span class="date">15 de Setembro, 2024</span>
+        </div>
+        
+        <p>
+          O CSS (Cascading Style Sheets) é a linguagem fundamental para estilizar páginas web. 
+          Neste artigo, exploraremos os conceitos modernos de CSS que permitem criar designs 
+          responsivos e acessíveis. A combinação de cores adequadas e tipografia legível é 
+          essencial para uma boa experiência do usuário.
+        </p>
+
+        <h3>Por que CSS é importante?</h3>
+        <p>
+          CSS não apenas torna suas páginas bonitas, mas também melhora a experiência do usuário. 
+          Cores bem escolhidas, fontes legíveis e espaçamento adequado criam uma hierarquia visual 
+          que guia o leitor através do conteúdo. Uma página bem estilizada consegue reter a atenção 
+          do visitante e comunicar a mensagem de forma eficaz.
+        </p>
+
+        <h3>Sistemas de Cor</h3>
+        <p>
+          Existem três principais sistemas de cores em CSS: HEX, RGB e HSL. Cada um oferece 
+          diferentes vantagens dependendo do contexto. HEX é amplamente utilizado em design, 
+          RGB oferece suporte a transparência com RGBA, e HSL é intuitivo para criar variações 
+          de cores mantendo a mesma tonalidade.
+        </p>
+
+        <a href="#" class="leia-mais">Leia o artigo completo →</a>
+      </article>
+
+      <!-- POST 2 -->
+      <article class="post">
+        <h2>Tipografia Responsiva em Web</h2>
+        <div class="post-meta">
+          <span class="author">Por Maria Santos</span>
+          <span class="date">12 de Setembro, 2024</span>
+        </div>
+        
+        <p>
+          A tipografia responsiva é um dos pilares do design web moderno. Tamanhos de fonte 
+          que se adaptam ao tamanho da tela garantem legibilidade em qualquer dispositivo. 
+          Usando unidades relativas como rem e em, podemos criar layouts que escalam proporcionalmente.
+        </p>
+
+        <h3>Escolhendo a Fonte Certa</h3>
+        <p>
+          A escolha da fonte é crucial para a identidade visual do seu site. Fontes serifadas 
+          (como Georgia) são ótimas para conteúdo editorial e blogs, enquanto fontes sem serifa 
+          (como Arial) funcionam melhor em interfaces de aplicações. O Google Fonts oferece 
+          centenas de opções de alta qualidade gratuitamente.
+        </p>
+
+        <h3>Linha-Altura e Legibilidade</h3>
+        <p>
+          Uma line-height de 1.6 é considerada ideal para leitura confortável em telas. 
+          Este espaçamento vertical entre linhas reduz a fadiga ocular e melhora significativamente 
+          a retenção de informação. Para títulos, uma line-height menor (1.1 - 1.2) cria 
+          uma aparência mais compacta e impactante.
+        </p>
+
+        <a href="#" class="leia-mais">Leia o artigo completo →</a>
+      </article>
+
+      <!-- POST 3 -->
+      <article class="post">
+        <h2>Google Fonts: Encontrando a Fonte Perfeita</h2>
+        <div class="post-meta">
+          <span class="author">Por Pedro Costa</span>
+          <span class="date">10 de Setembro, 2024</span>
+        </div>
+        
+        <p>
+          Google Fonts revolucionou a forma como escolhemos tipografia para web. Antes, éramos 
+          limitados a fontes do sistema. Agora, temos acesso a milhares de fontes de código aberto, 
+          otimizadas para web e distribuídas gratuitamente. Este artigo guia você através do 
+          processo de seleção e implementação.
+        </p>
+
+        <h3>Combinando Fontes</h3>
+        <p>
+          A combinação ideal geralmente envolve uma fonte serifada para títulos (Playfair Display, 
+          Merriweather) e uma sans-serif para corpo de texto (Lato, Open Sans, Roboto). 
+          Esta combinação clássica cria contraste visual mantendo legibilidade. Nunca use mais 
+          de 2-3 fontes diferentes em um projeto, pois isso pode sobrecarregar o design.
+        </p>
+
+        <h3>Performance e Otimização</h3>
+        <p>
+          Importar fontes do Google Fonts adiciona requisições HTTP. Para otimizar performance, 
+          importe apenas os pesos e estilos que você realmente usa. Use preconnect para acelerar 
+          o carregamento e considere usar variable fonts para reduzir o tamanho total dos arquivos.
+        </p>
+
+        <a href="#" class="leia-mais">Leia o artigo completo →</a>
+      </article>
+    </div>
+    </div> 
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="container">
+      <div class="widget">
+        <h4>Posts Populares</h4>
+        <ul>
+          <li><a href="#">CSS Grid vs Flexbox</a></li>
+          <li><a href="#">Guia de Acessibilidade Web</a></li>
+          <li><a href="#">JavaScript ES6 Essentials</a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Design</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Meu Blog de Tecnologia. Todos os direitos reservados.</p>
+      <p class="footer-credits">Desenvolvido com CSS</p>
+    </div>
+  </footer>
+</body>
+</html>

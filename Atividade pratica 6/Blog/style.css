@@ -1,0 +1,130 @@
+html ,body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:#FFFFFF; ;
+}
+header{
+    background-color: rgb(55, 22, 117);
+    color: #FFFFFF;
+    padding: 2px;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.content-wrapper {
+  display: flex;
+  max-width: 1200px; 
+  margin: 0 auto;
+  gap: 20px; 
+  padding: 20px;
+}
+main {
+  flex: 1;
+}
+.container h1{
+  font-family: 'Noto Serif', serif;
+}
+.container h2{
+  font-family: 'Noto Serif', serif;
+  color: rgb(9, 9, 77);
+  border-bottom: 4px solid hsl(39, 100%, 50%);
+  font-size: 35px;
+  
+}
+.container h3{
+  font-family: 'Noto Serif', serif;
+  color: rgb(9, 9, 77);
+  font-size: 25px;
+}
+.container h4{
+  font-family: 'Noto Serif', serif;
+  color: rgb(9, 9, 77);
+  font-size: 25px;
+}
+.container p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+main .container p{
+    text-align: justify;
+}
+.container span{
+  font-family: 'Roboto', sans-serif;
+}
+.container a{
+  font-family: 'Roboto', sans-serif;
+}
+.container2{
+margin-left: 250px; 
+padding: 20px;
+border-left: 4px solid hsl(39, 100%, 50%);
+margin-top: 1%;
+
+}
+.author{
+  color: rgb(5, 5, 133);
+}
+.date{
+  color: rgb(146, 146, 146);  
+  font-style: italic;
+  padding-left: 10px;
+
+}
+.post{
+    padding: 16px;
+}
+
+.leia-mais{
+    border: 2px solid hsl(39, 100%, 50%);
+    padding: 15px;
+    background-color: hsl(39, 100%, 50%);
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+.sidebar {
+  width: 300px; 
+  position: sticky;
+  top: 20px; 
+  align-self: flex-start; 
+  order: -1;
+}
+
+.content-wrapper .container,
+.content-wrapper .container2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+
+.widget li a{
+   text-decoration: none;
+   color: black; 
+   font-size: 20px;
+}
+.widget li{
+    list-style-type: none;
+    text-align: justify;
+}
+footer {
+    font-family:  'Noto Serif', serif;
+    background-color: rgb(55, 22, 117);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+}
