@@ -1,0 +1,367 @@
+/*  1. VARIÁVEIS GERAIS */
+:root {
+  --cor-primaria: #4f46e5;
+  --cor-primaria-hover: #4338ca;
+  --cor-sucesso: #16a34a;
+  --cor-sucesso-hover: #15803d;
+  --cor-destaque: #f59e0b;
+  --cor-fundo: #f8fafc;
+  --cor-texto: #334155;
+  --cor-texto-claro: #64748b;
+  --cor-branco: #ffffff;
+  --cor-borda: #e2e8f0;
+  
+  --fonte-principal: 'Segoe UI', system-ui, sans-serif;
+}
+
+/*  2. RESET E ESTILOS BASE (Sem uso de IDs) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*  3. NAVEGAÇÃO E HEADER (Uso de Seletores Descendentes) */
+header {
+  background-color: var(--cor-branco);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .nav-list .nav-item .nav-link {
+  color: var(--cor-texto);
+  font-weight: 500;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-list .nav-item .nav-link:hover {
+  color: var(--cor-primaria);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--cor-primaria);
+}
+
+.navbar .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+/* 4. COMPONENTES: BOTÕES (Múltiplas Classes e Conflitos Intencionais) */
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #ccc; 
+  color: #333;
+}
+
+.btn-grande { padding: 16px 32px; font-size: 1.125rem; }
+.btn-pequeno { padding: 8px 16px; font-size: 0.875rem; }
+
+.card-curso .btn {
+  background-color: #94a3b8; 
+  color: white;
+}
+
+.btn.btn-primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+}
+
+.btn.btn-primario:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.btn.btn-sucesso {
+  background-color: var(--cor-sucesso);
+  color: var(--cor-branco);
+}
+
+.btn.btn-sucesso:hover {
+  background-color: var(--cor-sucesso-hover);
+}
+
+/* 5. SEÇÕES PRINCIPAIS (Hero, Cursos, Sobre) */
+.hero {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: var(--cor-branco);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero-subtitle { font-size: 1.25rem; color: #cbd5e1; margin-bottom: 40px; }
+
+/* Seções Padrão */
+.secao-cursos, .secao-sobre, .secao-contato {
+  padding: 80px 0;
+}
+
+.secao-descricao {
+  text-align: center;
+  color: var(--cor-texto-claro);
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card-curso {
+  background: var(--cor-branco);
+  border: 2px solid var(--cor-borda); 
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-curso.card-curso-destaque {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-iniciante { background-color: #dcfce7; color: #166534; }
+.badge-intermediario { background-color: #fef9c3; color: #854d0e; }
+.badge-avancado { background-color: #fee2e2; color: #991b1b; }
+
+.card-descricao {
+  color: var(--cor-texto-claro);
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.card-lista {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.card-lista li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.card-lista li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--cor-borda);
+  padding-top: 20px;
+}
+
+.card-footer .preco {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--cor-texto);
+}
+
+.sobre-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.card-numero {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #19191a; 
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+/* 6. FORMULÁRIOS (Uso de Pseudo-classes)*/
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--cor-branco);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 12px 16px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background-color: var(--cor-branco);
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.formulario input:required:valid:not(:placeholder-shown),
+.formulario textarea:required:valid:not(:placeholder-shown) {
+  border-color: var(--cor-sucesso);
+}
+
+.formulario input:focus:invalid,
+.formulario textarea:focus:invalid {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group.checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.form-group.checkbox label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.form-group.checkbox input:checked + label {
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
+
+/* 7. FOOTER */
+
+footer {
+  background-color: #0f172a;
+  color: var(--cor-branco);
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--cor-branco);
+}
+
+.footer-section p {
+  color: #94a3b8;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul a {
+  color: #94a3b8;
+  transition: color 0.3s;
+}
+
+.footer-section ul a:hover {
+  color: var(--cor-destaque);
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
