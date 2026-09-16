@@ -1,0 +1,174 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1; 
+}
+
+header {
+  background-color: rgb(55, 22, 117);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+}
+
+main {
+  flex: 1;
+}
+
+.containerheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 10px; 
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row; 
+  flex: 1; 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.content-wrapper h1 {
+  margin: 0 0 20px 0;
+}
+
+.sidebar {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 240px; 
+  height: max-content; 
+  position: sticky;
+  top: 20px;
+  align-self: flex-start; 
+  background-color: white; 
+  box-shadow: 4px 5px 10px rgb(61, 58, 58);
+  height: 100%;
+}
+
+.cursos-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 16px; 
+}
+
+.card-curso {
+  border: 1px solid grey;
+  border-radius: 10px; 
+  padding: 10px;
+  background-color: white; 
+  flex: 1 1 220px; 
+  box-shadow: 4px 5px 10px rgb(61, 58, 58);
+}
+
+.btn {
+  background: linear-gradient(to right, #6a78e3, #6c4897);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 32px;
+  box-shadow: 0 4px 12px rgba(108, 72, 151, 0.2);
+}
+
+.card-curso h3 {
+  margin: 0;
+}
+
+.containerheader h1 {
+  font-family: 'Noto Serif', serif;
+}
+
+.containerfooter h4 {
+  font-family: 'Noto Serif', serif;
+  color: rgb(9, 9, 77);
+  font-size: 25px;
+  margin: 0;
+}
+
+.containerheader p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.containerfooter a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Imgs {
+  display: flex;
+  align-items: center;
+}
+
+.widget p {
+  margin-left: 20px;
+}
+
+.widget img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+footer {
+  font-family: 'Noto Serif', serif;
+  background-color: rgb(55, 22, 117);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; 
+  }
+
+  .sidebar {
+    width: auto; 
+    flex: none; 
+    position: static; 
+  }
+  .containerheader {
+    flex-direction: column; 
+    justify-content: center;
+    gap: 10px; 
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .nav {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+  }
+  .containerheader h1 {
+    margin: 0;
+  }
+
+}
